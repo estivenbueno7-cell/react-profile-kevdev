@@ -1,8 +1,17 @@
+import profileImage from "../assets/perfil.jpg";
+
 function Hero() {
   return (
-    <section id="inicio" className="hero">
+    <section className="hero" id="inicio">
 
       <div className="hero-content">
+
+        <div className="hero-image">
+          <img
+            src={profileImage}
+            alt="Foto de Kevin Bueno"
+          />
+        </div>
 
         <p className="hero-greeting">
           Hola, soy
@@ -18,18 +27,26 @@ function Hero() {
 
         <p className="hero-description">
           Estudiante de Análisis y Desarrollo de Software,
-          apasionado por crear aplicaciones web modernas,
-          funcionales y fáciles de usar.
+          enfocado en crear aplicaciones web modernas,
+          funcionales y escalables.
         </p>
 
         <div className="hero-buttons">
-          <a href="#proyectos" className="btn-primary">
-            Ver proyectos
+
+          <a
+            href="#proyectos"
+            className="btn btn-primary"
+          >
+            Ver mis proyectos
           </a>
 
-          <a href="#contacto" className="btn-secondary">
+          <a
+            href="#contacto"
+            className="btn btn-secondary"
+          >
             Contactarme
           </a>
+
         </div>
 
       </div>

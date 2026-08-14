@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+node_modules/
+dist/
+desktop.ini
+src/desktop.ini
+.env
+.env.local

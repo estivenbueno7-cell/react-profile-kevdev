@@ -1,18 +1,41 @@
-
 function Skills() {
-  const skills = [
-    "Java",
-    "Spring Boot",
-    "React",
-    "Angular",
-    "JavaScript",
-    "TypeScript",
-    "HTML",
-    "CSS",
-    "MySQL",
-    "PostgreSQL",
-    "Git",
-    "GitHub"
+  const skillGroups = [
+    {
+      title: "Frontend",
+      skills: [
+        "React",
+        "Angular",
+        "JavaScript",
+        "TypeScript",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      title: "Backend",
+      skills: [
+        "Java",
+        "Spring Boot",
+        "Node.js",
+        "Express"
+      ]
+    },
+    {
+      title: "Bases de datos",
+      skills: [
+        "MySQL",
+        "PostgreSQL"
+      ]
+    },
+    {
+      title: "Herramientas",
+      skills: [
+        "Git",
+        "GitHub",
+        "Postman",
+        "Docker"
+      ]
+    }
   ];
 
   return (
@@ -23,11 +46,29 @@ function Skills() {
         <h2>Habilidades</h2>
       </div>
 
-      <div className="skills-grid">
+      <div className="skills-groups">
 
-        {skills.map((skill) => (
-          <div className="skill-card" key={skill}>
-            {skill}
+        {skillGroups.map((group) => (
+          <div
+            className="skill-group"
+            key={group.title}
+          >
+
+            <h3>{group.title}</h3>
+
+            <div className="skills-grid">
+
+              {group.skills.map((skill) => (
+                <div
+                  className="skill-card"
+                  key={skill}
+                >
+                  {skill}
+                </div>
+              ))}
+
+            </div>
+
           </div>
         ))}
 
