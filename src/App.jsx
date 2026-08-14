@@ -1,6 +1,10 @@
+import Hero from './components/Hero';
+
 function App() {
   return (
-    <h1>Hola, soy Kevin</h1>
+    <>
+      <Hero />
+    </>
   );
 }
 
